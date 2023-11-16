@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"/>
+    <!-- <link rel="icon" href="../public/images/finallogo.png" type="image/png" /> -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Exchange Books Cambodia</title>
+  </head>
+  <body>
+    <nav class="navbar py-4 sticky-top navbar-expand-lg bg-info">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center mr-3 bg-info"
+          id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-5 bg-info" id="nav">
+            <a class="nav-link text-light" href="/"><h5>Home</h5></a>
+            <a class="nav-link text-light ml-5 pl-5" href="/books">
+              <h5>Library</h5>
+            </a>
+            <a class="nav-link text-light ml-5 pl-5" href="/books/new">
+              <h5>new books</h5>
+            </a>
+          </div>
+          <div class="navbar-nav ml-auto">
+            <% if(!currentUser) {%>
+            <a class="nav-link text-light" href="/login">Login</a>
+            <a class="nav-link text-light" href="/register">Register</a>
+            <% } else {%>
+            <a class="nav-link text-light" href="/logout">Logout</a>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </nav>
+   <div class="content">
+    <h1>Hello!</h1>
+    <h1>Welcome to <span>Exchange</span> Books</h1>
+    <h1>Community <span>Cambodia</span>. </h1>
+    <p>Exchange book, your trusted source for educational resources in Phnom Penh, <br> 12. We are dedicated to providing high-quality books <br>
+       and materials support your learning journey.</p>
+    <a href="/books" class="btn">View Books</a>
+   </div>
+   <div class="img-box">
+    <img src="https://o.remove.bg/downloads/eb4c2254-0774-4d10-bf70-e279f3151a61/read-removebg-preview.png" alt="">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,320L34.3,314.7C68.6,309,137,299,206,261.3C274.3,224,343,160,411,138.7C480,117,549,139,617,133.3C685.7,128,754,96,823,96C891.4,96,960,128,1029,144C1097.1,160,1166,160,1234,144C1302.9,128,1371,96,1406,80L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+   </div>
+
+
+    <!-- Contents -->
+  <h2 class="text-center mt-5">What we do?</h2>
+  <div class="wedo">
+    <img src="https://o.remove.bg/downloads/9eaa1dd0-42ff-4fb8-9b3b-11ef85ddf185/man-reading-book-white-background-removebg-preview.png" alt="" srcset="">
+    <p>Exchange Books is a Phnom Penh-based business dedicated to providing a platform for book lovers to exchange their favorite reads. Our goal is to create a community of like-minded individuals who share a passion for reading and learning.
+      With a focus on sustainability and affordability, Exchange Books offers a cost-effective way to expand your personal library while also reducing waste. We believe that everyone should have access to quality literature, and we strive to make that a reality through our book exchange program.</p>
+      <div class="svg1">
+      </div>
+  </div>
+  
+  <div class="about">
+    <h2 class="text-center p-2">About us</h2>
+    <div class="about_content">
+      <p>With our extensive collection of educational resources, we aim to inspire and empower individuals of all ages to expand their knowledge and research their full 
+        potential. We believe that education is the key to unlocking opportunities and creating a better future for all, and we are committed to making learning accessible to everyone. Whether you are a student, teacher, or lifelong learner, exchange book is here to help you discover the joy of learning.</p>
+    </div>
+
+         
+        
+    
+      <h3 class="text-center">Our Mission</h3>
+        <h4 class="text-center">
+          Join us in our mission to cultivate a love for books and spread the joy of reading throughout Cambodia!
+      </h4>
+        <div class="p-4 card-group">
+          <div class="card m-4">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1506377872008-6645d9d29ef7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">1.mission</h5>
+              <p class="card-text">At Exchange Book Community, 
+                our mission is to foster a culture of knowledge sharing 
+                and Readership in Cambodia. Our goal is to connect book 
+                enthusiasts from different backgrounds, encouraging the 
+                exchange of books and ideas to promote literacy and lifelong 
+                learning. Through our platform, we aim to create a vibrant 
+                community where individuals can freely exchange, 
+                discuss, and explore a wide range of literary works.</p>
+            </div>
+          </div>
+          <div class="card m-4">
+            <img class="card-img-top" src="https://plus.unsplash.com/premium_photo-1661964155525-fe70c0f7162b?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">2.mission</h5>
+              <p class="card-text">By providing a platform for book lovers to 
+                come together, we seek to inspire a passion for reading, 
+                broaden perspectives, and empower individuals to become 
+                lifelong learners. We believe that books have the power 
+                to educate, enlighten, and transform lives, and we strive
+                 to make reading accessible to all members of our community, 
+                 regardless of their socioeconomic background.</p>
+            </div>
+          </div>
+          <div class="card m-4">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1599689868384-59cb2b01bb21?auto=format&fit=crop&q=80&w=1473&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">3.mission</h5>
+              <p class="card-text">Through our initiatives, including book exchanges, reading clubs, and community events, we aim to create a positive impact on society by promoting literacy, critical thinking, and cultural appreciation. We envision a Cambodia where reading is celebrated, and knowledge is shared freely, contributing to the growth and development of individuals and communities.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <hr>
+        <div class="d-flex justify-content-between mb-5">
+          <div class="social  d-flex justify-content-between ">
+            <div class="contact ml-5" style="width: 400px;">
+              
+              <form action="post">
+                <h3 class="text-center">Contact us</h3>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+             </div>
+              <button href="#" class="btn btn-info">Send Now!</button>
+           </form>
+           </div>
+          </div>
+          <div class="platform">
+          </div>
+        </div> 
+
+    <!-- </footer>  -->
+    <footer
+      class="py-3 shadow pt-3 bg-body rounded"
+      style="background-color: rgb(52, 114, 93)"
+    >
+      <div class="container text-light">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="text-light">
+              &copy; 2023 Exchange book Cambodia | All rights reserved!
+            </p>
+          </div>
+          <div class="col-md-6 text-md-right sticky-footer">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a>Privacy Policy</a></li>
+              <li class="list-inline-item"><a>Terms of Use.</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
