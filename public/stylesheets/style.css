@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@900&family=Work+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins" sans-serif;
-  
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
 }
-
 
 .content {
   margin-top: 5%;
@@ -46,26 +47,37 @@
 }
 
 .btn:hover {
-  background-color: #0377fc;
-  color: #e8ebef;
+  background-color: #0b03fc;
+  color: #ffffff;
   border: 1px solid #0377fc;
 }
 
 .img-box img {
   display: block;
 }
-.img-box img{
+.img-box img {
   position: absolute;
-  top:30%;
-  left:65%;
+  top: 30%;
+  left: 65%;
   display: flex;
 }
-.img-box img:hover{
+.img-box img:hover {
   transform: scale(1.1);
   transition: all 0.3s;
 }
 
-svg{
+.icons i {
+  color: #0040ff;
+}
+.icons i:hover{
+  color: rgb(221, 20, 181);
+  transition: all 0.9s ease-in-out;
+}
+i .bl-github{
+  color:black;
+}
+
+svg {
   box-shadow: #171616;
   position: absolute;
   top: 27%;
@@ -74,39 +86,141 @@ svg{
   height: 100vh;
   z-index: -1;
 }
-.wedo{
+.wedo {
   display: flex;
   margin-left: 3rem;
   height: 100vh;
-  font-family: serif;
   color: black;
   font-weight: 600;
 }
-.wedo img{
+.wedo img {
   height: 500px;
   width: 500px;
   position: relative;
   top: 0;
   left: 0;
   display: flex;
- 
 }
+.wedo img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+  
 .wedo p {
-  top:10rem;
+  top: 10rem;
   margin: 0 7rem;
   position: relative;
   font-size: 20px;
   font-family: serif;
   font-weight: 400;
 }
-.svg1{
+.svg1 {
   position: absolute;
   background-color: #0377fc;
-  top: 200vh;
-  left: 4rem;
+  top: 188vh;
+  left: 5.9rem;
   width: 400px;
   height: 20vh;
   z-index: -1;
   border-radius: 50%;
-} 
+}
+
+.about {
+  position: relative;
+  margin-top: 5%;
+  margin-left: 3rem;
+  height: 100vh;
+  font-family: serif;
+  color: black;
+  font-weight: 600;
+}
+
+.about_content {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  margin-top: 5%;
+  margin-right: 45rem;
+  height: 45vh;
+  color: black;
+  font-weight: 600;
+}
+
+#nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.nav-link h5 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+.nav-link h5:hover {
+  color: rgb(128, 0, 124);
+}
+ul>li{
+  list-style: none;
+}
+.card-group{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 3rem;
+  height: 100vh;
+  color: black;
+  font-weight: 600;
+}
+.text-center{
+ font-size: 30px;
+ font-weight: 700;
+ color: #000;
+ cursor: pointer;
+}
+.text-center:hover{
+  color: #dd1414;
+}
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  height: 90vh;
+  color: black;
+  font-weight: 600;
+  border: #000000;
+}
+.card-title{
+  color: #0077ff;
+  font-size: 1.6rem;
+  
+}
+.contact{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 45rem;
+}
+.contact h1{
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+
+.footer{
+  position: relative;
+  top: 150vh;
+}
+
 
