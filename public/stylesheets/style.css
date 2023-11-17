@@ -66,15 +66,25 @@ font-family: 'Work Sans', sans-serif;
   transition: all 0.3s;
 }
 
-.icons i {
+.icons{
   color: #0040ff;
 }
 .icons i:hover{
-  color: rgb(221, 20, 181);
+  color: rgb(0, 255, 47);
   transition: all 0.9s ease-in-out;
 }
-i .bl-github{
+
+.instagram{
+  color: #ff00e1;
+}
+.github{
   color:black;
+}
+.telegram{
+  color:#0077ff;
+}
+.google{
+  color: #45d24c;
 }
 
 svg {
@@ -114,6 +124,12 @@ svg {
   font-family: serif;
   font-weight: 400;
 }
+.text-center:hover{
+  color: #14dd61;
+}
+.text-dd{
+  text-align: center;
+}
 .svg1 {
   position: absolute;
   background-color: #0377fc;
@@ -134,16 +150,18 @@ svg {
   color: black;
   font-weight: 600;
 }
-
+.text{
+  margin-left: 4rem;
+  font-weight: 600;
+}
 .about_content {
   font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
   position: relative;
-  margin-top: 5%;
   margin-right: 45rem;
+  margin-left: 4rem;
   height: 45vh;
-  color: black;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #nav a {
@@ -179,12 +197,10 @@ ul>li{
 .text-center{
  font-size: 30px;
  font-weight: 700;
- color: #000;
+ color: #000000;
  cursor: pointer;
 }
-.text-center:hover{
-  color: #dd1414;
-}
+
 .card{
   position: relative;
   display: flex;
@@ -199,7 +215,7 @@ ul>li{
   border: #000000;
 }
 .card-title{
-  color: #0077ff;
+  color: #00ff1e;
   font-size: 1.6rem;
   
 }
@@ -220,7 +236,7 @@ ul>li{
 
 .footer{
   position: relative;
-  top: 150vh;
+  top: 5vh;
 }
 
 
