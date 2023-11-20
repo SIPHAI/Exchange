@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@900&family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@900&family=Work+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Work Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .content {
@@ -65,25 +65,33 @@ font-family: 'Work Sans', sans-serif;
   transform: scale(1.1);
   transition: all 0.3s;
 }
+.contact .Contact {
+  margin-right: 80rem;
+  justify-content: left;
+}
 
-.icons{
+.icons {
+  cursor: pointer;
   color: #0040ff;
 }
-.icons i:hover{
-  color: rgb(0, 255, 47);
+
+.bi-instagram,
+.bi-github,
+.bi-telegram,
+.bi-google:hover {
+  cursor: pointer;
   transition: all 0.9s ease-in-out;
 }
-
-.instagram{
+.instagram {
   color: #ff00e1;
 }
-.github{
-  color:black;
+.github {
+  color: black;
 }
-.telegram{
-  color:#0077ff;
+.telegram {
+  color: #0077ff;
 }
-.google{
+.google {
   color: #45d24c;
 }
 
@@ -115,7 +123,7 @@ svg {
   transform: scale(1.1);
   transition: all 0.3s;
 }
-  
+
 .wedo p {
   top: 10rem;
   margin: 0 7rem;
@@ -124,10 +132,10 @@ svg {
   font-family: serif;
   font-weight: 400;
 }
-.text-center:hover{
+.text-center:hover {
   color: #14dd61;
 }
-.text-dd{
+.text-dd {
   text-align: center;
 }
 .svg1 {
@@ -150,13 +158,13 @@ svg {
   color: black;
   font-weight: 600;
 }
-.text{
+.text {
   margin-left: 4rem;
   font-weight: 600;
 }
 .about_content {
   font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
   margin-right: 45rem;
   margin-left: 4rem;
@@ -179,10 +187,10 @@ svg {
 .nav-link h5:hover {
   color: rgb(128, 0, 124);
 }
-ul>li{
+ul > li {
   list-style: none;
 }
-.card-group{
+.card-group {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -194,14 +202,14 @@ ul>li{
   color: black;
   font-weight: 600;
 }
-.text-center{
- font-size: 30px;
- font-weight: 700;
- color: #000000;
- cursor: pointer;
+.text-center {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  cursor: pointer;
 }
 
-.card{
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -214,29 +222,38 @@ ul>li{
   font-weight: 600;
   border: #000000;
 }
-.card-title{
+.card-title {
   color: #00ff1e;
   font-size: 1.6rem;
-  
 }
-.contact{
+.social {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 9rem;
+  display: inline-block;
+}
+
+.Contact {
+  position: relative;
+  margin-top: 35rem;
+  margin-left: 3rem;
+}
+
+.message {
+  margin-top: 35rem;
+  margin-bottom: 5rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  margin-top: 45rem;
-}
-.contact h1{
-  color: #000000;
-  font-size: 1.8rem;
-  font-weight: 700;
 }
 
+form {
+  margin-left: 5rem;
+  width: 50rem;
+}
 
-.footer{
+.footer {
   position: relative;
   top: 5vh;
 }
-
-
