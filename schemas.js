@@ -4,7 +4,7 @@ const { number } = require("joi");
 module.exports.bookSchema = Joi.object({
   book: Joi.object({
     title: Joi.string().required(),
-    price: Joi.number().required().min(0),
+    // price: Joi.number().required().min(0),
     location: Joi.string().required(),
     description: Joi.string().required(),
   }).required(),

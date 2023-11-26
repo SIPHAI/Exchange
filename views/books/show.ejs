@@ -65,7 +65,7 @@
   </div>
   <div class="col-6">
     <% if(currentUser){ %>
-    <h2>Leave a Review</h2>
+    <h4>Leave a Review</h4>
     <form
       action="/books/<%=book._id%>/reviews"
       method="POST"
@@ -94,7 +94,7 @@
         <label for="first-rate5" title="Amazing">5 stars</label>
       </fieldset>
       <div class="mb-3">
-        <label class="form-label" for="body">Review Text</label>
+        <label class="form-label" for="body">Drop your contact here to send the exchange request</label>
         <textarea
           class="form-control"
           name="review[body]"
