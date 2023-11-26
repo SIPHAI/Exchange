@@ -44,11 +44,10 @@
       <ul class="list-group list-group-flush">
         <li class="list-group-item text-muted"><%= book.location%></li>
         <li class="list-group-item">Submitted by <%= book.author.username%></li>
-        <!-- <li class="list-group-item">$<%= book.price%>/night</li> -->
       </ul>
       <% if( currentUser && book.author.equals(currentUser._id)) {%>
       <div class="card-body">
-        <a class="card-link btn btn-info" href="/books/<%=book._id%>/edit"
+        <a class="card-link btn btn-info mr-2" href="/books/<%=book._id%>/edit"
           >Edit</a
         >
         <form
@@ -56,11 +55,10 @@
           action="/books/<%=book._id%>?_method=DELETE"
           method="POST"
         >
-          <button class="btn btn-danger">Delete</button>
+          <button class="btn btn-danger mx-2">Delete</button>
         </form>
       </div>
       <% } %>
-      <div class="card-footer text-muted">2 days ago</div>
     </div>
   </div>
   <div class="col-6">
