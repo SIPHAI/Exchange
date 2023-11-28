@@ -51,7 +51,10 @@
             <a class="nav-link text-light" href="/login">Login</a>
             <a class="nav-link text-light" href="/register">Register</a>
             <% } else {%>
-            <a class="nav-link text-light" href="/logout">Logout</a>
+            <a class="nav-link text-light" href="/logout">Logout<svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-right ml-2 text-light" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+              <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+            </svg></a>
             <% } %>
           </div>
         </div>
@@ -75,22 +78,6 @@
         </div>
        </div>
 
-       <!-- <img src="/images/read5.jpg" alt=""> -->
-
-       <!-- <div class="wrapper">
-        <div class="box">
-          <img src="/images/read.jpg" alt="" class="img1" srcset="">
-          <img src="/images/read1.jpg" alt="" class="img2" srcset="">
-        </div> 
-        <div class="box">
-          <img src="/images/read2.jpg" alt="" class="img1" srcset="">
-          <img src="/images/read3.jpg" alt="" class="img2" srcset="">
-        </div> 
-        <div class="box">
-          <img src="/images/read4.jpg" alt="" class="img1" srcset="">
-          <img src="/images/read5.jpg" alt="" class="img2" srcset="">
-        </div> 
-       </div> -->
        <div class="col-12 mt-5 ml-5 pl-5"><h2 class="text">
         About us
       </h2>
@@ -197,13 +184,13 @@
           <div class="message col-md-6 col-sm-12 mt-5">
             <h3 class="text-center">Send Message</h3>
             <form method="POST" action="https://formsubmit.co/f79ef4e268ae72dec163da714ab140f9" enctype="multipart/form-data">
-              <input type="text" name="username" placeholder="Your name">
+              <input type="text" id="name"  name="username" placeholder="Your name">
               <br>
               <input type="email" name="email" placeholder="Your email">
               <br>
-              <textarea name="message" placeholder="Details of your problem"></textarea>
+              <textarea id="message" name="message" placeholder="Details of your problem"></textarea>
               <br>
-              <button type="submit">Send Now</button>
+              <button type="submit" onclick="sendMail()">Send Now</button>
           </form>
           </div>
           <div class="social column col-md-6 col-sm-12 mt-5 pt-5 d-flex justify-content-center">
@@ -239,25 +226,28 @@
 
     <!-- script -->
     <script>
-      var btn = document.getElementById('btn');
-      btn.addEventListener('click', function(e) {
-        e.preventDefault()
-        var name = document.detElementById('name').value;
-        var email = document.detElementById('email').value;
-        var message = document.detElementById('message').value;
-        var body = 'name:' + name + '</br> email:' + email+ '</br> message:' + message;
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "phalsiphai18@gmail.com",
-          Password: "05102002siphai",
-          To: "phalsiphai18@gmail.com",
-          From: email,
-          message: message,
-          body: body,
-        }).then(
-          message => alert("new message!")
-        );
-      })
+      function sendMail() {
+        var params = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          message: document.getElementById("message").value,
+        };
+      
+        const serviceID = "YOUR_SERVICE_ID";
+        const templateID = "YOUR_TEMPLETE_ID";
+      
+          emailjs.send(serviceID, templateID, params)
+          .then(res=>{
+              document.getElementById("name").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("message").value = "";
+              console.log(res);
+              alert("Your message sent successfully!!")
+      
+          })
+          .catch(err=>console.log(err));
+      
+      }
     </script>
 
     <script

@@ -1,16 +1,23 @@
 <% layout('layouts/boilerplate')%>
+<link rel="stylesheet" href="/stylesheets/style.css" />
+
 <div class="row d-flex">
   <div class="col col-5">
-      <img src="/images/ppl.jpg" alt="" style="height: 500px; width:500px;" srcset="">
+    <img
+      src="/images/ppl.jpg"
+      alt=""
+      style="height: 500px;"
+      srcset=""/>
   </div>
-  <div class="col col-7 " style="height: 100vh;">
-  <h1 class="text-center">New book</h1>
+  <div class="col col-7" style="height: 100vh">
+    <h1 class="text-center">New book</h1>
     <form
       action="/books"
       method="POST"
-      novalidate 
-      class="validated-form mr-5 pr-5" 
-      enctype="multipart/form-data">
+      novalidate
+      class="validated-form mr-5 pr-5"
+      enctype="multipart/form-data"
+    >
       <div class="mb-3">
         <label class="form-label" for="title">Book's Title</label>
         <input
@@ -18,7 +25,8 @@
           type="text"
           id="title"
           name="book[title]"
-          required/>
+          required
+        />
         <div class="valid-feedback">Looks good!</div>
       </div>
       <div class="mb-3">
@@ -33,7 +41,9 @@
         <div class="valid-feedback">Looks good!</div>
       </div>
       <div class="mb-3">
-        <label class="form-label " for="description" placeholder="max 20 words">How can we contact you?</label>
+        <label class="form-label" for="description" placeholder="max 20 words"
+          >How can we contact you?</label
+        >
         <textarea
           class="form-control border-0 border-bottom"
           type="text"
@@ -44,24 +54,23 @@
         <div class="valid-feedback">Looks good!</div>
       </div>
       <div class="mb-3">
-        <div class="form-file custom-file">
+        <div class="form-file custom-file mt-5">
           <input
             type="file"
             class="form-file-input border-0 border-bottom"
             id="image"
             name="image"
-            multiple
-          />
+            multiple/>
           <label class="form-file-label" for="image">
-            <span class="form-file-text custom-file-label border-0 border-bottom"
+            <span
+              class="form-file-text custom-file-label border-0 border-bottom"
               >Choose image(s)...</span
             >
-            <span class="form-file-button">Browse</span>
           </label>
         </div>
       </div>
       <div class="mb-3">
-        <button class="btn btn-success">Add book</button>
+        <button class="add">Add book</button>
       </div>
     </form>
     <!-- <a href="/books">All books</a> -->
