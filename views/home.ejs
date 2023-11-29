@@ -12,7 +12,8 @@
     /> 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
-    <link rel="icon" href="../public/images/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="https://i.ibb.co/XzmDTtm/69052567829.png" />
+
 
     <link
       rel="stylesheet"
@@ -25,7 +26,9 @@
     <title>Exchange Books Cambodia</title>
   </head>
   <body>
-    <nav class="navbar py-4 sticky-top navbar-expand-lg bg-info">
+    
+    <nav class="navbar py-3 sticky-top navbar-expand-lg navbar-dark bg-info">
+      <img class="ml-2" style="height: 55px; width: 55px;" src="https://i.ibb.co/XzmDTtm/69052567829.png" alt="" srcset="">
         <button
           class="navbar-toggler"
           type="button"
@@ -33,36 +36,36 @@
           data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-center mr-3 bg-info"
+          class="collapse navbar-collapse justify-content-center"
           id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-5 bg-info" id="nav">
-            <a class="nav-link text-light" href="/"><h5>Home</h5></a>
-            <a class="nav-link text-light ml-5 pl-5" href="/books">
-              <h5>Library</h5>
-            </a>
-            <a class="nav-link text-light ml-5 pl-5" href="/books/new">
-              <h5>new books</h5>
-            </a>
+          <div class="navbar-nav ml-5 pl-1" id="nav">
+            <a class="nav-link text-light" id="active"id="active" href="/"><h5>Home</h5></a>
+            <a class="nav-link text-light ml-5 " id="active"  href="/books"
+              ><h5>Library</h5></a>
+            <a class="nav-link text-light ml-5 " id="active" href="/books/new"
+              ><h5>New books</h5></a>
           </div>
           <div class="navbar-nav ml-auto">
             <% if(!currentUser) {%>
-            <a class="nav-link text-light" href="/login">Login</a>
-            <a class="nav-link text-light" href="/register">Register</a>
+            <a class="nav-link text-light login" href="/login">Login</a>
+            <a class="nav-link text-light register" href="/register">Register</a>
             <% } else {%>
-            <a class="nav-link text-light" href="/logout">Logout<svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-right ml-2 text-light" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
-              <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-            </svg></a>
+              <a class="nav-link text-light" href="/logout">Logout<svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-right ml-2 text-light" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg></a>
             <% } %>
           </div>
         </div>
       </div>
     </nav>
-    <div class="Main-contain row mb-5 p-5">
+    
+    <div class="Main-contain row mb-5 p-5 h-100">
       <div class="content col-12 row">
         <div class="col-8">
           <h1>Hello!</h1>
@@ -75,15 +78,15 @@
         <div class="img-box col-md-4 col-sm-12">
           <img src="/images/read-removebg-preview.png" class="img-fluid" alt="">
         </div>
-        <div class="wave col-12 ">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,320L34.3,314.7C68.6,309,137,299,206,261.3C274.3,224,343,160,411,138.7C480,117,549,139,617,133.3C685.7,128,754,96,823,96C891.4,96,960,128,1029,144C1097.1,160,1166,160,1234,144C1302.9,128,1371,96,1406,80L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+      </div>
+     
+      <div class="col-12 wrapper">
+        <h2 class="about">About us</h2> 
+            <p class="text">With our extensive collection of educational resources, we aim to inspire and empower individuals of all ages to expand their knowledge and research their full 
+            potential. We believe that education is the key to unlocking opportunities and creating a better future for all, and we are committed to making learning accessible to everyone. Whether you are a student, teacher, or lifelong learner, exchange book is here to help you discover the joy of learning.</p>
+          </h2>
         </div>
-       </div>
-
-       <div class="col-12 mt-5 ml-5 pl-5"><h2 class="text">
-        About us
-      </h2>
-      <!-- </div>
+      </div>
        <div id="carouselExampleCaptions" class="carousel slide d-flex  " data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -121,15 +124,10 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div> -->
+      </div> 
       
-       <div class="about col-12 row d-flex justify-content-center mt-5">
-          <div class="about_content col-12  text-center">
-            <p>With our extensive collection of educational resources, we aim to inspire and empower individuals of all ages to expand their knowledge and research their full 
-            potential. We believe that education is the key to unlocking opportunities and creating a better future for all, and we are committed to making learning accessible to everyone. Whether you are a student, teacher, or lifelong learner, exchange book is here to help you discover the joy of learning.</p>
-          </div>
-        </div>
       
+    
 
        <div class="wedo col-12 row">
         <div class="col-md-7 col-sm-12 d-flex align-items-center">
@@ -141,7 +139,7 @@
        </div>
        
         <div class="our_mission col-12 row mt-5">
-          <div class="col-12"><h3 class="text-center">Our Mission</h3></div>
+          <div class="col-12"><h3 class="text-center">Our <span>Mission</span></h3></div>
           <div class="col-12"><h4 class="text-dd text-center ">
             Join us in our mission to cultivate a love for books and spread the joy of reading throughout Cambodia!
         </h4></div>
@@ -208,7 +206,7 @@
     </div>
     <!-- </footer>  -->
     <footer
-      class="footer py-3 shadow pt-3 bg-info rounded">
+      class="footer py-3 shadow pt-3 mt-5 bg-info rounded">
       <div class="container text-light">
         <div class="row">
           <div class="col-md-6">
@@ -227,31 +225,7 @@
     </footer>
 
     <!-- script -->
-    <script>
-      function sendMail() {
-        var params = {
-          name: document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          message: document.getElementById("message").value,
-        };
-      
-        const serviceID = "YOUR_SERVICE_ID";
-        const templateID = "YOUR_TEMPLETE_ID";
-      
-          emailjs.send(serviceID, templateID, params)
-          .then(res=>{
-              document.getElementById("name").value = "";
-              document.getElementById("email").value = "";
-              document.getElementById("message").value = "";
-              console.log(res);
-              alert("Your message sent successfully!!")
-      
-          })
-          .catch(err=>console.log(err));
-      
-      }
-    </script>
-
+    
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

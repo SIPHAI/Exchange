@@ -1,12 +1,12 @@
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@900&family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@900&family=Work+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
-.nav-link h5{
-  margin-left: .6rem;
+.nav-link h5 {
+  margin-left: 0.6rem;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 500;
@@ -15,9 +15,12 @@
   transition: color 0.3s linear;
 }
 .nav-link a:hover,
-.nav-link h5:hover{
+.nav-link h5:hover {
   color: rgb(128, 0, 124);
   /* text-decoration: underline; */
+}
+.navbar-nav>.login:hover{
+ color: green;
 }
 
 
@@ -31,77 +34,98 @@
   color: rgb(0, 128, 47);
   font-style: italic;
 }
-.wave{
+
+.img-box {
+  top:5rem;
+}
+.img-box:hover{
+  transform: scale(1.2);
+  transition: all 0.6s ease-in-out;
+}
+.wave {
   position: absolute;
   margin-top: 7rem;
   margin-left: 4rem;
-  height: 100%;
+  top: 100px;
   z-index: -1;
 }
-.wave img{
+.wrapper{
   position: relative;
-  width: 100%;
-  height: 100%;
+  border: .1rem solid gray;
+  margin: 8rem;
+  padding: 15px;
+  background-color: rgb(0, 0, 0, 0.1);
+  border-radius: 0px 80px 16px;
+}
+span{
+  color:#0088cc;
+}
+.about{
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.text {
+  padding: 2rem;
+  position: relative;
+  font-size: 1rem;
 }
 
 .btn {
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   padding: 1rem 1rem;
-  border: .1rem solid rgb(20, 19, 19);
+  border: 0.1rem solid rgb(20, 19, 19);
   color: #000000;
   cursor: pointer;
-} 
-.btn:hover{
+}
+.btn:hover {
   background-color: rgb(0, 170, 200);
   color: #fff;
   transition: all 0.6s ease-in-out;
 }
 
-.span{
+.span {
   font-family: "Work Sans", sans-serif;
   margin-top: 1rem;
   font-size: 2.5rem;
   color: #000000;
 }
 
-
-
 .bi-facebook,
 .bi-github,
 .bi-instagram,
-.bi-telegram{
+.bi-telegram {
   font-size: 2.5rem;
   color: #000000;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 0px  rgb(0,0,0,0.1);
+  box-shadow: 0px rgb(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-
 }
 
-.bi-facebook:hover{
+.bi-facebook:hover {
   color: #3b5998;
   transform: scale(1.2);
 }
-.bi-github:hover{
+.bi-github:hover {
   color: #333;
   transform: scale(1.2);
 }
-.bi-instagram:hover{
+.bi-instagram:hover {
   color: #e1306c;
   transform: scale(1.2);
 }
-.bi-telegram:hover{
+.bi-telegram:hover {
   color: #0088cc;
   transform: scale(1.2);
 }
 
-.wrapper{
-  width:100%;
+.wrapper {
+  width: 100%;
   margin: 10% auto;
 }
-.box{
+.box {
   margin-left: 6rem;
   height: 200px;
   width: 25%;
@@ -109,31 +133,31 @@
   overflow: hidden;
   position: relative;
 }
-.img1{
+.img1 {
   position: absolute;
   z-index: 2;
-  transition: .4s;
+  transition: 0.4s;
   transform-origin: 50%, 50%;
   width: 100%;
 }
-.img2{
+.img2 {
   filter: blur(20px);
   transform: scale(1.2);
   opacity: 1;
-  transition: .4s;
+  transition: 0.4s;
   width: 100%;
 }
-.box:hover .img1{
+.box:hover .img1 {
   filter: blur(8px);
   transform: scale(1);
   opacity: 1;
 }
-.box:hover .img2{
+.box:hover .img2 {
   filter: blur(0);
   transform: scale(1.2);
   opacity: 1;
 }
-form>input{
+form > input {
   margin-top: 1rem;
   margin-left: 1rem;
   width: 100%;
@@ -144,7 +168,7 @@ form>input{
   font-size: 1rem;
   font-family: "Work Sans", sans-serif;
 }
-form>textarea{
+form > textarea {
   margin-top: 1rem;
   margin-left: 1rem;
   width: 100%;
@@ -167,21 +191,20 @@ textarea.form-control:focus {
   outline: none;
   box-shadow: none;
 }
-.add{
+.add {
   background-color: #fff;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 0.1rem solid rgb(0, 0, 0, 0.3);
   outline: none;
   font-size: 1rem;
   font-family: "Work Sans", sans-serif;
-
 }
-.add:hover{
+.add:hover {
   background-color: rgb(0, 170, 200);
   color: #fff;
   transition: all 0.6s ease-in-out;
 }
-form>button{
+form > button {
   margin-top: 1rem;
   margin-left: 1rem;
   width: 100%;

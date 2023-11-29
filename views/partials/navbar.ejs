@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/stylesheets/navbar.css" />
-<nav class="navbar py-4 sticky-top navbar-expand-lg navbar-dark bg-info">
-
+<nav class="navbar py-3 sticky-top navbar-expand-lg navbar-dark bg-info">
+  <img class="ml-4" style="height: 55px; width: 55px;" src="https://i.ibb.co/XzmDTtm/69052567829.png" alt="" srcset="">
     <button
       class="navbar-toggler"
       type="button"
@@ -10,18 +10,18 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-    <img style="height: 55px; width: 55px;" src="/public/images/logo.png" alt="" srcset="">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div
-      class="collapse navbar-collapse justify-content-center mr-3"
+      class="collapse navbar-collapse justify-content-center"
       id="navbarNavAltMarkup">
       <div class="navbar-nav ml-5 pl-1" id="nav">
         <a class="nav-link text-light" id="active"id="active" href="/"><h5>Home</h5></a>
-        <a class="nav-link text-light ml-5 pl-5" id="active"  href="/books"
+        <a class="nav-link text-light ml-5" id="active"  href="/books"
           ><h5>Library</h5></a>
-        <a class="nav-link text-light ml-5 pl-5" id="active" href="/books/new"
-          ><h5>new books</h5></a>
+       
+        <a class="nav-link text-light ml-5" id="active" href="/books/new"
+          ><h5>New books</h5></a>
       </div>
       <div class="navbar-nav ml-auto">
         <% if(!currentUser) {%>
