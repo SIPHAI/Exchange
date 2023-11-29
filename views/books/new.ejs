@@ -1,23 +1,22 @@
 <% layout('layouts/boilerplate')%>
 <link rel="stylesheet" href="/stylesheets/style.css" />
 
-<div class="row d-flex">
-  <div class="col col-5">
+<div class="row">
+  <div class="col-sm-6">
     <img
       src="/images/ppl.jpg"
       alt=""
       style="height: 500px;"
       srcset=""/>
   </div>
-  <div class="col col-7" style="height: 100vh">
+  <div class="col-sm-6" style="height: 100vh">
     <h1 class="text-center">New book</h1>
     <form
       action="/books"
       method="POST"
       novalidate
       class="validated-form mr-5 pr-5"
-      enctype="multipart/form-data"
-    >
+      enctype="multipart/form-data">
       <div class="mb-3">
         <label class="form-label" for="title">Book's Title</label>
         <input

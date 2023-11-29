@@ -10,7 +10,7 @@
           class="carousel-item <%= i === 0 ? 'active' : ''%>"
           style="width:500px;"
         >
-          <img src="<%= img.url%>" class="d-block w-100" alt="" />
+          <img src="<%= img.url%>" class="d-block w-100 shadow-sm pl-4 mb-5 bg-body rounded" alt="" />
         </div>
         <% }) %>
       </div>
@@ -89,14 +89,14 @@
         <input type="radio" id="first-rate5" name="review[rating]" value="5" />
         <label for="first-rate5" title="Amazing">5 stars</label>
       </fieldset>
-      <div class="mb-3">
+      <div class="mb-3 pr-5">
     <h4>Leave a contact</h4>
         <label class="form-label" for="body">Drop your contact here to send the exchange request</label>
         <textarea
-          class="form-control"
+          class="form-control  "
           name="review[body]"
           id="body"
-          cols="30"
+          cols="20"
           rows="3"
           required
         ></textarea>
