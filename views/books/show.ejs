@@ -66,9 +66,11 @@
     <form
       action="/books/<%=book._id%>/reviews"
       method="POST"
-      class="mb-3 validated-form"
-      novalidate
-    >
+      class="mb-3 val
+      idated-form"
+      novalidate >
+      <span>The stars tell the interested of the request sender</span>
+
       <fieldset class="starability-basic">
         <input
           type="radio"
@@ -89,7 +91,7 @@
         <input type="radio" id="first-rate5" name="review[rating]" value="5" />
         <label for="first-rate5" title="Amazing">5 stars</label>
       </fieldset>
-      <div class="mb-3 pr-5">
+      <div class="mb-3">
     <h4>Leave a contact</h4>
         <label class="form-label" for="body">Drop your contact here to send the exchange request</label>
         <textarea
@@ -102,7 +104,7 @@
         ></textarea>
         <div class="valid-feedback">Looks good!</div>
       </div>
-      <button class="btn btn-success">Submit</button>
+      <button class="btn btn-info">Submit</button>
     </form>
     <% } %> <% for(let review of book.reviews) { %>
     <div class="card mb-3">
@@ -111,7 +113,7 @@
         <p class="starability-result" data-rating="<%=review.rating%>">
           Rated: <%= review.rating %> stars
         </p>
-        <p class="card-text">Review: <%= review.body %></p>
+        <p class="card-text">Contact: <%= review.body %></p>
         <% if( currentUser && review.author.equals(currentUser._id)) {%>
         <form
           action="/books/<%=book._id%>/reviews/<%=review._id%>?_method=DELETE"
