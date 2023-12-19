@@ -17,14 +17,24 @@ const User = require("./models/user");
 const userRoutes = require("./routes/users");
 const bookRoutes = require("./routes/books");
 const reviewRoutes = require("./routes/reviews");
-
-mongoose.connect("mongodb://127.0.0.1:27017/Exchangebook", {
+const MongoURL = "mongodb+srv://phalsiphai18:2Uln1Wxbg5N1mVQx@cluster0.o0sacmt.mongodb.net/exchange?retryWrites=true&w=majority"
+mongoose.connect(MongoURL, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
-});
+}
 
+
+);
+// mongoose.connect("mongodb://127.0.0.1:27017/Exchangebook", {
+//   useNewUrlParser: true,
+//   useCreateIndex: true,
+//   useUnifiedTopology: true,
+//   useFindAndModify: false,
+// });
+// phalsiphai18
+// 2Uln1Wxbg5N1mVQx
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
