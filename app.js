@@ -27,19 +27,19 @@ mongoose.connect(MongoURL, {
 
 
 );
-// mongoose.connect("mongodb://127.0.0.1:27017/Exchangebook", {
-//   useNewUrlParser: true,
-//   useCreateIndex: true,
-//   useUnifiedTopology: true,
-//   useFindAndModify: false,
-// });
+mongoose.connect("mongodb://127.0.0.1:27017/Exchangebook", {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+});
 // phalsiphai18
 // 2Uln1Wxbg5N1mVQx
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error:"));
-db.once("open", () => {
-  console.log("Database connected");
-});
+// const db = mongoose.connection;
+// db.on("error", console.error.bind(console, "connection error:"));
+// db.once("open", () => {
+//   console.log("Database connected");
+// });
 
 const app = express();
 
