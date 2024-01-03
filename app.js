@@ -18,7 +18,7 @@ const userRoutes = require("./routes/users");
 const bookRoutes = require("./routes/books");
 const reviewRoutes = require("./routes/reviews");
 
-mongoose.connect("mongodb://127.0.0.1:27017/Exchangebook", {
+mongoose.connect("mongodb://localhost:27017/Exchangebook", {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
